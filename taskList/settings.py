@@ -56,7 +56,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/Users/Zach/dev/djangoproject/taskList/admin_bootstrap/static'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -110,6 +110,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'admin_bootstrap',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -121,6 +122,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'tasks',
+    
 )
 
 # A sample logging configuration. The only tangible logging
