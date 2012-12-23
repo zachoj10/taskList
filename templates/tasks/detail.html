@@ -1,0 +1,9 @@
+<h1>{{ task.title }}</h1>
+<h2>{{ task.description }}</h2>
+<p>Date Created - {{ task.date_created }}</p>
+<p>{% if task.due_date %}
+	{{ task.due_date }}
+{% else %}
+	Date Due - None 
+{% endif %}</p>
+<p>{{ task.completed }}</p>

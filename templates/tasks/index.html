@@ -1,0 +1,11 @@
+<h1>{{ username }}</h1>
+{% if task_list %}
+	{% for task in task_list %}
+		<li><a href="/user/{{ user_id }}/tasks/{{ task.id }}/">{{ task.title }}</a></li>
+	{% endfor %}
+{% else %}
+	<p>There are no tasks on this task list</p>
+
+{% endif %}
+
+<a href="/user/{{ user_id }}/tasks/add/">Add Task</a>
